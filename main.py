@@ -39,8 +39,7 @@ class Category:
             total += item["amount"]
         output = title + items + f"Total: {total:.2f}"
         return output
-      //example usage 
-      food_category = Category("Food")
+food_category = Category("Food")
 clothing_category = Category("Clothing")
 
 food_category.deposit(1000, "Initial deposit")
@@ -53,4 +52,3 @@ clothing_category.transfer(200, food_category)
 
 print(food_category)
 print(clothing_category)
-
